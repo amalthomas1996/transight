@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
+import Search from "./Search/Search";
+import Profile from "./Profile/Profile";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +10,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <Search />
+      <Profile />
     </>
   );
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
+import profile from "../assets/profile.png";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       {/* Left: Logo */}
       <div className="navbar-left">
-        <img src="/logo.png" alt="Logo" />
-        <span>Transight</span>
+        <img src={logo} alt="Logo" />
       </div>
 
       {/* Center: Search Bar */}
-      <div className="search-container">
+      <div className="search-container1">
         <FaSearch className="search-icon" />
         <input type="text" placeholder="Search" />
       </div>
@@ -22,7 +23,7 @@ export default function Navbar() {
         <button className="notification-btn">
           <span className="notification-badge">2</span> 🔔
         </button>
-        <img src="/profile.png" alt="User" className="profile-pic" />
+        <img src={profile} alt="User" className="profile-pic" />
       </div>
     </nav>
   );
