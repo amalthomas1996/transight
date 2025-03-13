@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import {
   FaSearch,
   FaCalendarAlt,
@@ -9,6 +11,7 @@ import {
 import "./Search.css";
 
 export default function SearchBar() {
+  const navigate = useNavigate();
   return (
     <div className="search-container">
       {/* Top Search Section */}
@@ -39,7 +42,12 @@ export default function SearchBar() {
         <div className="action-buttons">
           <button className="action-btn edit-driver">Edit Driver Info</button>
           <button className="action-btn assign">Assign/Deassign</button>
-          <button className="action-btn add">Add</button>
+          <button
+            className="action-btn add"
+            onClick={() => navigate("/add-driver")}
+          >
+            Add
+          </button>
           <button className="action-btn assign-fence">Assign Fence</button>
         </div>
       </div>

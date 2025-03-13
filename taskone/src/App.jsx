@@ -1,18 +1,20 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Navbar/Navbar";
-import Search from "./Search/Search";
-import Profile from "./Profile/Profile";
+
+import Home from "./Home";
+import AddDriver from "./AddDriver/AddDriver";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Navbar />
-      <Search />
-      <Profile />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add-driver" element={<AddDriver />} />
+      </Routes>
+    </Router>
   );
 }
 
