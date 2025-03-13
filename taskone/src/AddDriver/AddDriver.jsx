@@ -23,7 +23,7 @@ export default function AddDriver() {
 
           <div className="form-group">
             <label>Contact Number</label>
-            <input type="text" placeholder="Enter Contact" required />
+            <input type="number" placeholder="Enter Contact" required />
           </div>
 
           <div className="form-group">

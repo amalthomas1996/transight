@@ -32,6 +32,7 @@
   flex: 1;
   font-size: 14px;
   padding-left: 8px;
+  max-width: 300px;
 }
 
 /* Date Inputs */
@@ -97,9 +98,10 @@
 
 /* Bottom Navigation */
 .bottom-nav {
+  background-color: #F2F2F2;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* 4 equal columns */
   gap: 4px;
   width: 100%;
 }

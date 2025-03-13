@@ -21,6 +21,7 @@ export default function SearchBar() {
           <FaSearch color="#630024" />
           <input type="text" placeholder="Search Vehicle/driver" />
         </div>
+        <span>From</span>
 
         {/* Date Inputs */}
         <div className="date-input">

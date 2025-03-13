@@ -1,6 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import profileImage from "../assets/profile1.jpeg";
+
 const Profile = () => {
   return (
     <div className="profile-container">
@@ -16,52 +17,56 @@ const Profile = () => {
         <div className="profile-details">
           <div className="detail-card">
             <p>
-              <strong>Joined On:</strong> 12 May 2020
+              Joined On: <strong>12 May 2020</strong>
             </p>
             <p>
-              <strong>Added by:</strong> John Doe
+              Added by: <strong>John Doe</strong>
             </p>
             <p>
-              <strong>Address:</strong> Gurogaon, Lalitpur, Uttar Pradesh
+              Address: <strong>Gurogaon, Lalitpur, Uttar Pradesh</strong>
             </p>
             <p>
-              <strong>Contact No:</strong> 05:30 Am, 12/06/2024
+              Contact No: <strong>05:30 Am, 12/06/2024</strong>
             </p>
             <p>
-              <strong>Location:</strong> India
+              Location: <strong>India</strong>
             </p>
             <p>
-              <strong>Vehicle Type:</strong> Container Truck
+              Vehicle Type: <strong>Container Truck</strong>
             </p>
             <p>
-              <strong>Current Status:</strong>{" "}
-              <span className="status in-trip">In Trip</span>
+              Current Status:
+              <span className="status in-trip">
+                <strong>
+                  <span className="status in-trip">In Trip</span>
+                </strong>
+              </span>
             </p>
           </div>
           <div className="detail-card">
             <p>
-              <strong>Experience:</strong> 5 Years
+              Experience: <strong>5 Years</strong>
             </p>
             <p>
-              <strong>Previous Employer:</strong> Fedrick Max
+              Previous Employer: <strong>Fedrick Max</strong>
             </p>
             <p>
-              <strong>Number of Trips handled:</strong> 12
+              Number of Trips handled: <strong>12</strong>
             </p>
             <p>
-              <strong>Licence Validity:</strong> 12 May 2024
+              Licence Validity: <strong>12 May 2024</strong>
             </p>
             <p>
-              <strong>Document:</strong>{" "}
+              Document:
               <a href="#" className="link">
                 View Attachment
               </a>
             </p>
             <p>
-              <strong>Alternative POC No:</strong> SK264GHSJSS
+              Alternative POC No: <strong>SK264GHSJSS</strong>
             </p>
             <p>
-              <strong>Show in Map:</strong>{" "}
+              Show in Map:
               <a href="#" className="link">
                 View Location
               </a>
@@ -69,23 +74,22 @@ const Profile = () => {
           </div>
           <div className="detail-card">
             <p>
-              <strong>Average Speed:</strong>{" "}
-              <span className="value">35Km/h</span>
+              Average Speed: <strong>35Km/h</strong>
             </p>
             <p>
-              <strong>Escalations:</strong> Fedrick Max
+              Escalations: <strong>Fedrick Max</strong>
             </p>
             <p>
-              <strong>Alert Ratio:</strong> 12
+              Alert Ratio: <strong>12</strong>
             </p>
             <p>
-              <strong>Assigned Fence:</strong> MMC
+              Assigned Fence: <strong>MMC</strong>
             </p>
             <p>
-              <strong>Manager/Owner:</strong> Max Philip
+              Manager/Owner: <strong>Max Philip</strong>
             </p>
             <p>
-              <strong>Current/ Latest Trip:</strong> Uttar Pradesh
+              Current/ Latest Trip: <strong>Uttar Pradesh</strong>
             </p>
           </div>
         </div>
