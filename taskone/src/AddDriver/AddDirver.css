@@ -1,93 +1,128 @@
-.add-driver-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+* {
+  margin: 0;
 }
 
-.add-driver-container h2 {
+.add-driver-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #E6FFDF, #928f90);
+}
+
+.form-card {
+  width: 50%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+h2 {
   text-align: center;
   color: #630024;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.add-driver-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.form-group {
+  margin-bottom: 15px;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
+.form-group label {
+  display: block;
+  font-size: 14px;
   font-weight: 600;
-  color: #333;
   margin-bottom: 5px;
+  color: #333;
 }
 
-.input-group input,
-.input-group select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
   font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+  background: #f8f8f8;
 }
 
-.input-group input:focus,
-.input-group select:focus {
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
   border-color: #630024;
   outline: none;
   box-shadow: 0 0 5px rgba(99, 0, 36, 0.3);
+  background: #fff;
 }
 
-.form-actions {
+.form-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
 .submit-btn,
-.cancel-btn {
-  padding: 12px 20px;
+.close-btn {
+  flex: 1;
+  padding: 12px 16px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .submit-btn {
   background: #630024;
-  color: #fff;
-}
-
-.cancel-btn {
-  background: #ccc;
-  color: #333;
+  color: white;
+  margin-right: 10px;
 }
 
 .submit-btn:hover {
   background: #880030;
 }
 
-.cancel-btn:hover {
-  background: #999;
+.close-btn {
+  background: #ddd;
+  color: #333;
 }
 
-/* Responsive */
+.close-btn:hover {
+  background: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .form-card {
+    width: 80%;
+  }
+}
+
 @media (max-width: 600px) {
-  .form-actions {
+  .form-card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .form-buttons {
     flex-direction: column;
     gap: 10px;
   }
 
   .submit-btn,
-  .cancel-btn {
+  .close-btn {
     width: 100%;
   }
 }
